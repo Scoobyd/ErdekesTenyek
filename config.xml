@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "sk.ibolyamark7.tenyek"
+        versionCode="10" 
+        version   = "1.0.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Érdekes és furcsa tények magyarul</name>
+
+    <description>
+        Több mint 100 darab érdekes és furcsa tény a tudomány, történelem és egyéb más területrõl. 
+    </description>
+
+    <author href="https://github.com/Scoobyd" email="ibolyamark7@gmail.com">
+        Ibolya Márk 
+    </author>
+	<preference name="android-minSdkVersion" value="8" />
+	<preference name="android-maxSdkVersion" value="18" />
+	<preference name="android-targetSdkVersion" value="18" />
+	<preference name="android-installLocation" value="auto" />
+	<icon src="icon.png" />
+
+</widget>
