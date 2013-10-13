@@ -8,7 +8,7 @@
    <script type="application/x-javascript" src="iui/iui.js"></script>
   <script type="text/javascript">
    function genID(){
-    document.getElementById("randLink").href="#t" + Math.floor((Math.random()*10)+2);
+    document.getElementById("randLink").href="#t" + Math.floor(Math.random()*(103-1+1)+1);
   }
  
  window.onload = genID;
