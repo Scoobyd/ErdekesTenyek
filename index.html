@@ -8,10 +8,12 @@
    <script type="application/x-javascript" src="iui/iui.js"></script>
   <script type="text/javascript">
    function genID(){
-    document.getElementById("randLink").href="#t" + Math.floor(Math.random()*(103-1+1)+1);
   }
  
- window.onload = genID;
+ setInterval(function(){ 
+    document.getElementById("randLink").href="#t" + Math.floor(Math.random()*(103-1+1)+1);
+}, 1000);
+
   
 </script>
 <style>
@@ -37,6 +39,19 @@
             
 		<fieldset>
 			<a id="randLink" class="whiteButton" href="#">Random</a>
+		</fieldset>
+            <fieldset>
+			<div class="row">
+<script type="text/javascript">
+  var inmobi_conf = {
+    siteid : "fe43eaab5c454d01844e618f8cd10ad2",
+    slot : "1382027183718127",
+    test: true,
+    targetWindow : "_blank"  // possible values "_blank" or "_top", default "_top".
+  };
+</script>
+<script type="text/javascript" src="inmobi.js"></script>
+			</div>
 		</fieldset>
 	</div>
     
