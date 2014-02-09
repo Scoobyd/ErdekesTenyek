@@ -1,1401 +1,1566 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
-   <link rel="stylesheet" href="iui/iui.css" type="text/css" />
-   <link rel="stylesheet" href="iui/t/default/default-theme.css" type="text/css"/>
-   <script type="application/x-javascript" src="iui/iui.js"></script>
-  <script type="text/javascript">
-   function genID(){
-  }
- 
- setInterval(function(){ 
-    document.getElementById("randLink").href="#t" + Math.floor(Math.random()*(103-1+1)+1);
-}, 1000);
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+        <link rel="stylesheet" href="iui/iui.css" type="text/css" />
+        <link rel="stylesheet" href="iui/t/default/default-theme.css" type="text/css"/>
+        <script type="application/x-javascript" src="iui/iui.js"></script>
+        <script type="text/javascript">
+            function genID() {
+            }
 
-  
-</script>
-<style>
-    </style>
-</head>
-<body>
-   <div class="toolbar">
-		<h1 id="pageTitle"></h1>
-                <a id="backButton" class="button" href="#"></a>
-	</div>
-
-	<div id="t_start" title="Érdekes és furcsa tények" selected="true" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;"><b>Köszönjük, hogy letöltötted az Érdekes és furcsa tények appunkat! Reméljük sok érdekességet találsz majd itt!</b></p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t1">Jöjjön az első tény!</a>
-		</fieldset>
-            
-		<fieldset>
-			<a id="randLink" class="whiteButton" href="#">Random</a>
-		</fieldset>
-	</div>
-    
-  <div id="t1" title="Tény 1" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Egy informatikai cég Dél-afrikai Köztársasagban bebizonyította, hogy gyorsabb információt küldeni galambpostán mint a helyi szolgáltató internetjén.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t2">Következő tény</a>
-		</fieldset>
-	</div>
+            setInterval(function() {
+                document.getElementById("randLink").href = "#t" + Math.floor(Math.random() * (103 - 1 + 1) + 1);
+            }, 1000);
 
 
-<div id="t2" title="Tény 2" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A Volvo találta fel a 3 pontos biztonsági övet. Ingyen odaadta a szabadalmat minden autógyárnak.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t3">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t3" title="Tény 3" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Van egy elhagyatott részecskegyorsító Texasban.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t4">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t4" title="Tény 4" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">(Egykori) Milliárdos Chuck Feeney odaadta vagyona
-                                99%-át, hogy a kiváló tanulók egyetemre mehessenek. 6.3 milliárd dollárjából így 2 millió dollár maradt.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t5">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t5" title="Tény 5" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Egy tigris Indiában örökbe fogadott 2 elhagyott tigris 
-                                kölyköt, és annyukként nevelte fel őket. Ez egyedüláló az állatvilágban.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t6">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t6" title="Tény 6" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Az utolsó jégkorszakban csak pár darab gepárd maradt életben. 
-                                Így minden gepárd olyan közeli rokon, hogy gyakorlatilag egymás klónjai.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t7">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t7" title="Tény 7" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">2005-2011-ig 42 milliárd dollárnyi kupon nem lett felhasználva.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t8">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t8" title="Tény 8" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Ha 2005-ös aranyérmét elvennék Lance Armstrongnak, 
-                                és annak a versenyzőnek adnák, akit sosem gyanusítottak doppingolással, akkor 
-                                a 23. helyezett kapná meg azt.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t9">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t9" title="Tény 9" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A houstoni repülőteren sok panasz érkezet, hogy 
-                                sokat kell várni a poggyászra, így a reptér vezetősége messzebre rakatta a poggyászkiadót, 
-                                meghosszabítva a sétaidőt amíg az utasok odaérnek. A panaszok száma szinte 0-ra csökkent.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t10">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t10" title="Tény 10" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Angliai birtokok 70%-a még mindig a lakosság 1%-ának a kezében van. 
-                                Legtöbbjük Hódító Vilmos csapatának leszármazottja.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t11">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t11" title="Tény 11" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">San Francisco légszennyezettségének 29%-a Kínából jön.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t12">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t12" title="Tény 12" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Emberek Kínában csodálkoztak, hogy egy házaspár napi 21 órát dolgozott egy étteremben. A helyiek "robot éttermi házaspár"-nak hívták őket.
-                                Kiderült, hogy egy ikerpár összeházasodott egy másik ikerpárral és folyamatosan ők cserélkeztek.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t13">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t13" title="Tény 13" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Bill Gates 2010 áprilisáig több mint 36 milliárd dollárt(8 000 000 000 000 Ft-ot) adományozott.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t14">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t14" title="Tény 14" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Albert Einstein olyan gyakran volt leszólítva az utcán a rajongói által, hogy vitatkozzanak vele az elméleteiről, hogy elkezdte mindenkinek azt válaszolni, hogy "Elnézést kérek! Engem mindig összetévesztenek Einstein professzorral."</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t15">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t15" title="Tény 15" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Wikipédiának le kellett tiltania minden egyes amerikai kongresszusi IP címet, mert a képviselők egyfolytában változtatták egymás oldalait.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t16">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t16" title="Tény 16" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Azokban az amerikai városokban, ahol bevezették a kötelező kamerát a rendőrök számára, 88%-ban esett a rendőrök elleni bejelentések száma a civilek részéről.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t17">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t17" title="Tény 17" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Zach Galifianakis(Másnaposok, Terhes társaság) meg lett kérve, hogy reklámozza a Nike-t, mivel olyan sikeres volt a Másnaposokban. Amikor először volt konferenciája a Nike vezetőivel úgy kezdte a beszélgetést, hogy ezt kérdezte: "Szóval srácok, még mindig 7 évesek csinálják a cuccaitokat?". </p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t18">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t18" title="Tény 18" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Brazil börtönök felajánlja a raboknak, hogy ha elolvasnak egy könyvet és írnak róla pár oldalt, akkor a büntetésüket csökkentik 4 nappal (maximum 48 nap/év).</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t19">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t19" title="Tény 19" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A Pepsi odaadta a termékeit a szovjetkenek és cserébe kaptak 17 tengeralattjárót, egy utazóhajót, és egy hadihajót.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t20">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t20" title="Tény 20" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Eredetileg Eminem bandájának a D12-nek az volt az alapötlete, hogy Detroit 12 legjobb rappereit összegyűjtik, de csak 6 embert tudtak összehozni, ezért mindegyiküknek ki kellett találniuk maguknak egy alteregót, így Eminem alteregója lett Slim Shady.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t21">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t21" title="Tény 21" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Átlagosan egy embernek évi 76 darab 8-órás munkanapba telne, amíg minden felhasználói szerződést elolvasna, amit elfogad.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t22">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t22" title="Tény 22" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Egy Fu Manchu nevezetű orangután folyamatosan megszökött az állatkertből egy dróddarab segítségével. Amikor a dolgozók átkutatták, akkor mindig a szájába rejtette a dródot.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t23">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t23" title="Tény 23" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Egyszer egy ember Alaszkában egy kialudt vulkánban meggyújtott több száz autó gumit április elsején. Mindenki a vulkán alatti faluban azt hitte újra ki fog törni a vulkán.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t24">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t24" title="Tény 24" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Ókori Rómában egyszer letartóztattak egy ékszerárust, aki hamis ékszereket árult. Azzal büntették, hogy oroszlánnal kell harcolnia az arénában, de amikor felhúzódott a kapu az oroszlán helyett egy csirke jött ki. Az uralkodó azt mondta, hogy "Mivel ő is átvert embereket így büntetésből ő is át lett verve."</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t25">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t25" title="Tény 25" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">1995-ben egy bankrabló úgy rabolt bankot, hogy egész arcát bekente citromlével, mivel úgy gondolta, hogy ezt használják rejtett üzenetekhez, így elrejtené az arcát a kamerák elől.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t26">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t26" title="Tény 26" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Egy szoftvergyártó cég elrejtett a felhasználói szerződés szövegében $1000 dolláros jutalmat annak, aki észreveszi. 5 hónappal a program kiadása után vette észre valaki és kapta meg az $1000 dollárt.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t27">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t27" title="Tény 27" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Thomas Sullivan aki feltalálta a filteres teát elkezdte úgy árulni a teáját, hogy kis selyem zacskókákba rakta a teafüvet, így küldve ki kis tea mintákat. Akik kaptak mintát egyből úgy kezdték használni, mint ahogy a modern filteres teát kell. Nem sokkal ezután több tucat megrendelés érkezett az új "filteres" teájára.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t28">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t28" title="Tény 28" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Első emberek, akik lemérték a Mount Everest magasságát hozzádtak 2 lábat, mert szerintük senki nem hitte volna el, hogy pont 29,000 láb magas a hegy, így 29,002 lábat mondtak.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t29">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t29" title="Tény 29" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Az űrhajósoknak olyan helyen kell aludniuk, ahol nagy a légmozgás, mert különben az éjszaka folyamán az arcuk körül felgyűlt szén-dioxid miatt folyamatosan arra kelnének, hogy nem kapnak levegőt.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t30">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t30" title="Tény 30" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Lehetséges az, hogy rég elveszett bakelitlemezek fényképéről vissza lehessen nyerni a hangot.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t31">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t31" title="Tény 31" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">1916-ban Amerikában javasoltak egy olyan törvényt, hogy minden háború előtt, amiben az USA részt akar venni előtte a lakosságnak kelljen róla szavaznia. Akik Igennel szavaztak volna, azok egyből az önkéntesek listájára kerültek volna.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t32">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t32" title="Tény 32" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Norvégiában novemberben csak fele adót kell fizetni, így mindenkinek több pénze marad karácsonyra.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t33">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t33" title="Tény 33" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Van egy úgynevezett ZIP Bomba. Címe: "42.zip" ami becsomagolva 42 kilobájt, kicsomagolva 4.5 Petabájt.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t34">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t34" title="Tény 34" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Amikor Alan Shepardtől (első amerikai az űrben) megkérdezték, hogy min gondolkozik, amikor a kilövésre várt, ő azt válaszolta, hogy "Azon jár az eszem, hogy minden egyes darabja az űrhajónak a legolcsóbb ajánlatot tevő készítette."</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t35">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t35" title="Tény 35" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">2011-ben Németország felett elengedtek 100 darab papírrepülőt. Pár elrepült egészen Kanadáig, USA-ig, Ausztráliáig és Dél-Afrikáig.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t36">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t36" title="Tény 36" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Az Europai Únió fő tolmácsa Ioannis Ikonomou folyékonyan beszél 32 nyelven.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t37">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t37" title="Tény 37" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A legsikeresebb vallató a II. Világháborúban barátságot használt a vallatáshoz. Azokat akiktől információkat akart megtudni elvitte az állatkertbe, még egyszer elvitte egyiküket egy Német gépen repülni is.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t38">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t38" title="Tény 38" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Bahamákon van egy sziget, amin csak malacok laknak.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t39">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t39" title="Tény 39" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Sonynál és egyéb japán cégeknél azokat az alkalmazottakat, akiket ki szeretnének rúgni adnak nekik egy olyan munkát, aminek semmi értelme, vagy egyáltalán nem kell semmit csinálniuk, hogy depressziósak legyenek és maguktól kilépjenek. Így nem kell kifizetni a járulékos jutalékokat ami a kirúgásnál járna.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t40">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t40" title="Tény 40" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Norvégia áramellátásának több mint 98%-át vízerőművek adják.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t41">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t41" title="Tény 41" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Az idő alatt, amíg a Plútót felfedezték és elvették a bolygó státuszát egy teljes kört sem csinált a nap körül.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t42">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t42" title="Tény 42" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A homárok gyakorlatilag halhatatlanok. Nem mutatják jelét öregedésnek, étvágyvesztésnek, szervi elváltozásoknak. Ha egy homár meghal, akkor az külső tényező miatt történik (eddigi megfigyelések alapján).</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t43">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t43" title="Tény 43" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Pán Péter szerzői jogait az író egy gyerekkorháznak adta, így a kórház folyamatosan üzemelhet a szerzőjogi díjak miatt.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t44">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t44" title="Tény 44" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">1971-ben egy középiskolás diák kirepült a repülögépből egy repülőbalesetben a székében ragadva végig és túlélte a 3.2 km-es zuhanást, ami után még 9 napot kellett gyalogolnia a legközelebbi civilizációig.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t45">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t45" title="Tény 45" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Egy nőnek szívrohama volt egy repülőn. Amikor a légiutaskísérő megkérdezte, hogy van-e orvos a repülőn, 15 ember állt fel, mivel mind egy kardiológiai konferenciára tartottak.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t46">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t46" title="Tény 46" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Ha van 5500 forintod és semmi adósságod, akkor gazdagabb vagy mint az amerikaik 25%-a.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t47">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t47" title="Tény 47" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Makákók Japánban megtanulták, hogy hogyan lopjanak pénztárcákat és táskákat. Az érméket amiket loptak arra használják, hogy automatákból italokat és csipszeket vegyenek.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t48">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t48" title="Tény 48" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Japánban van egy család, amelyik már 1300 éve ugyanazt a hotelt futtatják. Ez 46 generációt jelent.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t49">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t49" title="Tény 49" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A második világháborúban 1940-ben Német és Angol repülők lelőtték egymást Norvégia fölött. Amikor a gépek lezuhantak az pilóták segítettek egymásnak túlélni. A háború után találkoztak, de úgy mint barátok.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t50">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t50" title="Tény 50" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Jeruzsálem 1917-es ostromában az Angolok cigerattákat dobáltak le a repülőikről, amikben nagy adag ópium volt annak reményében, hogy ha az Ottománok elszívják őket, akkor nem lesz erejük harcolni. A terv működött.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t51">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t51" title="Tény 51" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Angliában azért olyan nagyok az újságok, mert az angol kormány 1712-ben az szerint kezdte el adóztatni az újságokat, hogy mennyi darab oldaluk van.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t52">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t52" title="Tény 52" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Egy delfin gyakran segített a hajóknak kikerülni a zátonyokat Új-Zéland partjainál, úgy hogy mutatta nekik az utat, egészen a delfin 1912-es eltűnéséig.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t53">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t53" title="Tény 53" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A tőzsdén olyan fontos a sebesség, hogy 300 millió dolláros befektetéssel lefektettek egy transzatlanti kábelt, hogy 0.005 másodpercet javítsanak a London-New York közötti átviteli sebességen.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t54">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t54" title="Tény 54" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">J.R.R. Tolkien elkezdett írni egy könyvet az időutazásról (The Lost Road - Az Elveszett Út), ami öszekötötte volna Középföldét a jelen korral. A könyvet nem fejezte be.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t55">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t55" title="Tény 55" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A füst ami látható űrhajóindításkor, az vízgőz, ami az űrhajó alatti medencéből jön. Ez a medence azért kell, mert felfogja az akusztikus hullámokat amiket az űrhajó kilövéskor kelt, mert különben széttépné az űrhajót.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t56">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t56" title="Tény 56" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Franciaországban csak akkor lehet hívni pékségnek egy helyet, ha minden terméket kézzel készítenek és semmi automatizálást nem használnak.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t57">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t57" title="Tény 57" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Amikor Niel Armstrong és Buzz Aldrin landoltak a holdon, ott hagyták Jurij Gagarin egyik medálját tiszteletük jeléül.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t58">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t58" title="Tény 58" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Amikor Beethoven bemutatta a 9. szimfóniáját a rendőröknek kellett megállítaniuk a közönséget, mert szerintük ekkora tapsot nem kaphat egy nem nemes polgár.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t59">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t59" title="Tény 59" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Amikor a Coca-Cola titkos receptjét el akarták adni a Pepsinek a Pepsi hívta az FBI-t.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t60">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t60" title="Tény 60" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A Ferrari motorok direkt vannak úgy tervezve, hogy szépen szóljanak.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t61">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t61" title="Tény 61" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Senki nem tudja, hogy ki találta fel a tűzcsapot, mivel a szabadlmi lapja elégett egy tűzben.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t62">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t62" title="Tény 62" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A teasütemény feltalálója eladta a szabadalmi jogokat a Nestlének cserébe élethosszig tartó teasüteményért.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t63">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t63" title="Tény 63" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Norvégia bármelyik ország polgárának megengedi, hogy bármely állami egyetemükön ingyen tanuljanak.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t64">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t64" title="Tény 64" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Finnország 2015-re tervezi, hogy minden egyes lakosának legyen 100 Mbit/sec-es internetje. Ez törvénybe is lesz foglalva.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t65">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t65" title="Tény 65" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Amikor Kínában bevezették a McDonald's-ban a Drive-Trought, ez annyira új volt a kínaiknak, hogy megvették az ablaknál az ételt, leparkolták az autót és bevitték az épületbe és asztalnál ették meg.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t66">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t66" title="Tény 66" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Teheneknek van legjobb barátjuk és szomorúak, ha el vannak választva.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t67">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t67" title="Tény 67" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">1808-ban volt egy párbaj több száz méter magasan. Mind a két fél hőlégballonban volt és mordállyal próbálták megsemmisíteni egymás hőlégballonját.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t68">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t68" title="Tény 68" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Amikor Charles Darwin felfedezte a Galápagosi óriásteknőst megpróbált lovagolni rajtuk.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t69">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t69" title="Tény 69" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Új-Zéland tiltja a TV reklámokat a legtöbb nemzeti ünnepén.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t70">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t70" title="Tény 70" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Vannak nyelvek, amelyekben nem található meg az "előre, hátra, jobbra, balra", hanem csak az "észek, dél, nyugat, kelet" szavak. Azok a népek, akik ilyen nyelvet használnak azoknál kialakul az úgynevezett "iránytű agy", ami azt jelenti, hogy bárhol meg tudják álapítani az égtájakat, például egy zárt épület vagy sűrű erdőben.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t71">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t71" title="Tény 71" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Orosz katonák nem hordanak zoknit, csak ruhába csavarják a lábukat. 2013 év végétől kezdik bevezetni a zoknit.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t72">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t72" title="Tény 72" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A középkorban ha gyep volt valaki udvarán az a gazdagság jele volt. Ha valaki arra használhatta az udvarát, hogy ne gyümölcsöt vagy zöldséget termesszen, akkor valószínűleg nagy vagyona volt.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t73">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t73" title="Tény 73" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A 18. századi Angliában a belépődíj állatkertekbe egy kutya vagy egy macska volt. Ahhoz kellettek, hogy az oroszlánokat etessék velük.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t74">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t74" title="Tény 74" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Az ember és a kutya képes csak rá a tanulmányok szerint, hogy más szeméből felismerje, hogy merre néz. A kutya csak az embernél ismeri ezt fel.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t75">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t75" title="Tény 75" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Szaúd-Arábiában a nők vezethetnek repülőt, de autót nem.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t76">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t76" title="Tény 76" class="panel">
-		
-		<fieldset>
-			<div class="row">
-                            <p style="text-align:center;">Hollandiában ha több mint 4-en állnak sorban egy kasszánál, és nincsen minden sor nyitva, akkor a sorbanállóknak ingyen van amit venni akartak.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t77">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t77" title="Tény 77" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Annyi fajta alma van, hogyha megennél minden nap egy darabot, akkor 20 évig tartana mindet kipróbálni.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t78">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t78" title="Tény 78" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">James Cameron miután megnézte a Csillagok Háborúját úgy döntött, hogy otthagyja a kamionos munkáját és elkezd filmeket rendezni.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t79">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t79" title="Tény 79" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Jon Bon Jovinak van egy étterme, ahol nem kell fizetni. A vevő annyi pénzt hagy ott, amennyit akar cserébe az ételért vagy beállhat önkéntesnek az étteremben.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t80">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t80" title="Tény 80" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Amikor David Copperfieldet ki akarták rabolni úgy tudta átverni a rablókat, hogy bűvésztrükköt használva elhitette velük, hogy üresek a zsebei. Pedig nála volt a pénztárcája, útlevele, telefonja.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t81">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t81" title="Tény 81" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A II. Világháborúban a németek követeltek Zakynthos sziget polgármesterétől egy listát a szigeten található zsidokról. A polgármester átadott egy listát, amin csak a saját neve és a sziget rabbijáé volt. Így az összes zakynthosi zsidó megmenekült.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t82">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t82" title="Tény 82" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Amikor megkérdezték Albert Einsteint, hogy mekkora a hangsebesség azt válaszolta, hogy "Ilyen információt nem jegyzek meg, mivel megtalálható a könyvekben."</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t83">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t83" title="Tény 83" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A világ legmagasabb fájának ('Hyperion' - 112 méter magas) a pontos helye titokban van tartva, nehogy a turisták megrongálják.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t84">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t84" title="Tény 84" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A hangyakirálynő az egyik leghosszabb életű rovar. Több mint 28 évig tud élni.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t85">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t85" title="Tény 85" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Ha képessek lennénk hallani a 20 Hz alatti hangot, akkor hallanánk az izmainkat mozogni.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t86">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t86" title="Tény 86" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Sok bevásárlóközpont nem használ fűtőtesteket. A legtöbb hő a lámpákból jön és a vásárlókból. Sőt néha be kell kapcsolni a légkondicionálót, hogy elviselhető hőmérsékletre hűtség az épületet még télen is.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t87">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t87" title="Tény 87" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A hím kölyök kutyák szándékosan hagyják nyerni a játékokban a nőstény kölyök kutyákat.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t88">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t88" title="Tény 88" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">1830-as években a görög miniszterelnök megpróbálta elterjeszteni a krumplit az országban, de senki sem akarta termeszteni. Ezért a hajókhoz, amik a krumplit hozták őröket állított, így felkeltve a figyelmet. Az emberek elkezdték lopkodni a krumplit a hajókról így elterjesztve azt az egész országban.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t89">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t89" title="Tény 89" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Vannak férgek, amik a gleccserekben laknak, ha 4 foknál magasabb hőmérsékletre melegítik fel őket, akkor elolvadnak.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t90">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t90" title="Tény 90" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Az elefántok félnek a méhektől, van is egy külön hangjelük, amely arra figyelmeztet, hogy "a méhek mérgesek".</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t91">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t91" title="Tény 91" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Az ókori Kínában csiklandozást használtak a nemesség kínzására, mivel nem hagyott nyomot és gyors volt.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t92">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t92" title="Tény 92" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A francia méhészek "felfedezték" a zöld és kék mézet. Rájöttek, hogy ez az miatt van, mert a méhek elkezdték a közeli M&M's gyár hulladékát gyűjteni.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t93">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t93" title="Tény 93" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Kodak találta fel a digitális fényképezést, de ezt titokban tartották, mivel attól féltek, hogy ez véget vethet a jól profitáló film-készítő üzletüknek. Végül a digitális fényképezőgépek miatt ment csődbe a cég.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t94">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t94" title="Tény 94" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Szinte az összes hörcsög, ami kisállatkereskedésekben kapható 2 darab hörcsög utódja, amit egy tudós hozott magával Szíriából 1930-ban (összesen 11-et hozott, de csak 2-nek lettek kölykei), és amelyek utódiat szétkülte a világ minden pontjára a többi tudósnak további vizsgálatokra.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t95">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t95" title="Tény 95" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A szemüvegek 80%-át egy gyártó készíti. Ezért tudják olyan magasan tartani a szemüvegek árát.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t96">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t96" title="Tény 96" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Az olaszországi Velence alapja 1200 éve épült fatörzsekre. Még szinte teljes egészében ugyanazok a fatörzsek tartsák a város nagy részét.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t97">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t97" title="Tény 97" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Van egy orosz TV műsor, amelyben el kell lopni egy autót, és ha 35 percig nem kapják el a "tolvajt" a rendőrök, akkor megkapja az autót, de ha elkapják, akkor szembe kell néznie a vádakkal.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t98">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t98" title="Tény 98" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Vannak olyan madarak, amelyek elvezetik az embereket méhkaptárakhoz, hogy miután az emberek elvitték a mézet ők meg tudják enni a lárvákat.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t99">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t99" title="Tény 99" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Az ember a legjobb hosszútávfutó az összes élőlény közül. Még a lovaknál is hosszabb távra képes elfutni.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t100">Következő tény</a>
-		</fieldset>
-	</div>
-	
-<div id="t100" title="Tény 100" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">A kerék később lett feltalálva, mint a hajó, szőtt ruha, varrótű, kosár, de még a furulyánál is.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t101">Következő tény</a>
-		</fieldset>
-	</div>				
-	
-<div id="t101" title="Tény 101" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Egy brazil börtönben csökkentik a rabok büntetését, hogyha szobabiciklin pedáloznak, amivel áramot generálnak a közeli városnak.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t102">Következő tény</a>
-		</fieldset>
-	</div>
-		
+        </script>
+        <style>
+            #footer {
+                position:absolute;
+                bottom:0; left:0;
+                width:100%;
+                height:48px;
+                padding:0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="toolbar">
+            <h1 id="pageTitle"></h1>
+            <a id="backButton" class="button" href="#"></a>
+            <div id="footer">
+                <script type="text/javascript" src="http://ad.leadboltads.net/show_app_ad.js?section_id=194003976"></script>
+            </div>
+        </div>
+
+        <div id="t_start" title="Érdekes és furcsa tények" selected="true" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;"><b>Köszönjük, hogy letöltötted az Érdekes és furcsa tények appunkat! Reméljük sok érdekességet találsz majd itt!</b></p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t1">Jöjjön az első tény!</a>
+            </fieldset>
+
+            <fieldset>
+                <a id="randLink" class="whiteButton" href="#">Véletlenszerű</a>
+            </fieldset>
+        </div>
+
+        <div id="t1" title="Tény 1" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Egy informatikai cég Dél-afrikai Köztársasagban bebizonyította, hogy gyorsabb információt küldeni galambpostán mint a helyi szolgáltató internetjén.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t2">Következő tény</a>
+            </fieldset>
+        </div>
+
+
+        <div id="t2" title="Tény 2" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A Volvo találta fel a 3 pontos biztonsági övet. Ingyen odaadta a szabadalmat minden autógyárnak.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t3">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t3" title="Tény 3" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Van egy elhagyatott részecskegyorsító Texasban.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t4">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t4" title="Tény 4" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">(Egykori) Milliárdos Chuck Feeney odaadta vagyona
+                        99%-át, hogy a kiváló tanulók egyetemre mehessenek. 6.3 milliárd dollárjából így 2 millió dollár maradt.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t5">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t5" title="Tény 5" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Egy tigris Indiában örökbe fogadott 2 elhagyott tigris 
+                        kölyköt, és annyukként nevelte fel őket. Ez egyedüláló az állatvilágban.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t6">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t6" title="Tény 6" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Az utolsó jégkorszakban csak pár darab gepárd maradt életben. 
+                        Így minden gepárd olyan közeli rokon, hogy gyakorlatilag egymás klónjai.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t7">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t7" title="Tény 7" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">2005-2011-ig 42 milliárd dollárnyi kupon nem lett felhasználva.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t8">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t8" title="Tény 8" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Ha 2005-ös aranyérmét elvennék Lance Armstrongnak, 
+                        és annak a versenyzőnek adnák, akit sosem gyanusítottak doppingolással, akkor 
+                        a 23. helyezett kapná meg azt.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t9">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t9" title="Tény 9" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A houstoni repülőteren sok panasz érkezet, hogy 
+                        sokat kell várni a poggyászra, így a reptér vezetősége messzebre rakatta a poggyászkiadót, 
+                        meghosszabítva a sétaidőt amíg az utasok odaérnek. A panaszok száma szinte 0-ra csökkent.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t10">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t10" title="Tény 10" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Angliai birtokok 70%-a még mindig a lakosság 1%-ának a kezében van. 
+                        Legtöbbjük Hódító Vilmos csapatának leszármazottja.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t11">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t11" title="Tény 11" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">San Francisco légszennyezettségének 29%-a Kínából jön.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t12">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t12" title="Tény 12" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Emberek Kínában csodálkoztak, hogy egy házaspár napi 21 órát dolgozott egy étteremben. A helyiek "robot éttermi házaspár"-nak hívták őket.
+                        Kiderült, hogy egy ikerpár összeházasodott egy másik ikerpárral és folyamatosan ők cserélkeztek.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t13">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t13" title="Tény 13" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Bill Gates 2010 áprilisáig több mint 36 milliárd dollárt(8 000 000 000 000 Ft-ot) adományozott.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t14">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t14" title="Tény 14" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Albert Einstein olyan gyakran volt leszólítva az utcán a rajongói által, hogy vitatkozzanak vele az elméleteiről, hogy elkezdte mindenkinek azt válaszolni, hogy "Elnézést kérek! Engem mindig összetévesztenek Einstein professzorral."</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t15">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t15" title="Tény 15" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Wikipédiának le kellett tiltania minden egyes amerikai kongresszusi IP címet, mert a képviselők egyfolytában változtatták egymás oldalait.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t16">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t16" title="Tény 16" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Azokban az amerikai városokban, ahol bevezették a kötelező kamerát a rendőrök számára, 88%-ban esett a rendőrök elleni bejelentések száma a civilek részéről.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t17">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t17" title="Tény 17" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Zach Galifianakis(Másnaposok, Terhes társaság) meg lett kérve, hogy reklámozza a Nike-t, mivel olyan sikeres volt a Másnaposokban. Amikor először volt konferenciája a Nike vezetőivel úgy kezdte a beszélgetést, hogy ezt kérdezte: "Szóval srácok, még mindig 7 évesek csinálják a cuccaitokat?". </p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t18">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t18" title="Tény 18" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Brazil börtönök felajánlja a raboknak, hogy ha elolvasnak egy könyvet és írnak róla pár oldalt, akkor a büntetésüket csökkentik 4 nappal (maximum 48 nap/év).</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t19">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t19" title="Tény 19" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A Pepsi odaadta a termékeit a szovjetkenek és cserébe kaptak 17 tengeralattjárót, egy utazóhajót, és egy hadihajót.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t20">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t20" title="Tény 20" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Eredetileg Eminem bandájának a D12-nek az volt az alapötlete, hogy Detroit 12 legjobb rappereit összegyűjtik, de csak 6 embert tudtak összehozni, ezért mindegyiküknek ki kellett találniuk maguknak egy alteregót, így Eminem alteregója lett Slim Shady.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t21">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t21" title="Tény 21" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Átlagosan egy embernek évi 76 darab 8-órás munkanapba telne, amíg minden felhasználói szerződést elolvasna, amit elfogad.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t22">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t22" title="Tény 22" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Egy Fu Manchu nevezetű orangután folyamatosan megszökött az állatkertből egy dróddarab segítségével. Amikor a dolgozók átkutatták, akkor mindig a szájába rejtette a dródot.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t23">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t23" title="Tény 23" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Egyszer egy ember Alaszkában egy kialudt vulkánban meggyújtott több száz autó gumit április elsején. Mindenki a vulkán alatti faluban azt hitte újra ki fog törni a vulkán.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t24">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t24" title="Tény 24" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Ókori Rómában egyszer letartóztattak egy ékszerárust, aki hamis ékszereket árult. Azzal büntették, hogy oroszlánnal kell harcolnia az arénában, de amikor felhúzódott a kapu az oroszlán helyett egy csirke jött ki. Az uralkodó azt mondta, hogy "Mivel ő is átvert embereket így büntetésből ő is át lett verve."</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t25">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t25" title="Tény 25" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">1995-ben egy bankrabló úgy rabolt bankot, hogy egész arcát bekente citromlével, mivel úgy gondolta, hogy ezt használják rejtett üzenetekhez, így elrejtené az arcát a kamerák elől.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t26">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t26" title="Tény 26" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Egy szoftvergyártó cég elrejtett a felhasználói szerződés szövegében $1000 dolláros jutalmat annak, aki észreveszi. 5 hónappal a program kiadása után vette észre valaki és kapta meg az $1000 dollárt.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t27">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t27" title="Tény 27" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Thomas Sullivan aki feltalálta a filteres teát elkezdte úgy árulni a teáját, hogy kis selyem zacskókákba rakta a teafüvet, így küldve ki kis tea mintákat. Akik kaptak mintát egyből úgy kezdték használni, mint ahogy a modern filteres teát kell. Nem sokkal ezután több tucat megrendelés érkezett az új "filteres" teájára.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t28">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t28" title="Tény 28" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Első emberek, akik lemérték a Mount Everest magasságát hozzádtak 2 lábat, mert szerintük senki nem hitte volna el, hogy pont 29,000 láb magas a hegy, így 29,002 lábat mondtak.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t29">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t29" title="Tény 29" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Az űrhajósoknak olyan helyen kell aludniuk, ahol nagy a légmozgás, mert különben az éjszaka folyamán az arcuk körül felgyűlt szén-dioxid miatt folyamatosan arra kelnének, hogy nem kapnak levegőt.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t30">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t30" title="Tény 30" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Lehetséges az, hogy rég elveszett bakelitlemezek fényképéről vissza lehessen nyerni a hangot.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t31">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t31" title="Tény 31" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">1916-ban Amerikában javasoltak egy olyan törvényt, hogy minden háború előtt, amiben az USA részt akar venni előtte a lakosságnak kelljen róla szavaznia. Akik Igennel szavaztak volna, azok egyből az önkéntesek listájára kerültek volna.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t32">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t32" title="Tény 32" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Norvégiában novemberben csak fele adót kell fizetni, így mindenkinek több pénze marad karácsonyra.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t33">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t33" title="Tény 33" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Van egy úgynevezett ZIP Bomba. Címe: "42.zip" ami becsomagolva 42 kilobájt, kicsomagolva 4.5 Petabájt.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t34">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t34" title="Tény 34" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Amikor Alan Shepardtől (első amerikai az űrben) megkérdezték, hogy min gondolkozik, amikor a kilövésre várt, ő azt válaszolta, hogy "Azon jár az eszem, hogy minden egyes darabja az űrhajónak a legolcsóbb ajánlatot tevő készítette."</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t35">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t35" title="Tény 35" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">2011-ben Németország felett elengedtek 100 darab papírrepülőt. Pár elrepült egészen Kanadáig, USA-ig, Ausztráliáig és Dél-Afrikáig.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t36">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t36" title="Tény 36" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Az Europai Únió fő tolmácsa Ioannis Ikonomou folyékonyan beszél 32 nyelven.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t37">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t37" title="Tény 37" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A legsikeresebb vallató a II. Világháborúban barátságot használt a vallatáshoz. Azokat akiktől információkat akart megtudni elvitte az állatkertbe, még egyszer elvitte egyiküket egy Német gépen repülni is.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t38">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t38" title="Tény 38" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Bahamákon van egy sziget, amin csak malacok laknak.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t39">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t39" title="Tény 39" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Sonynál és egyéb japán cégeknél azokat az alkalmazottakat, akiket ki szeretnének rúgni adnak nekik egy olyan munkát, aminek semmi értelme, vagy egyáltalán nem kell semmit csinálniuk, hogy depressziósak legyenek és maguktól kilépjenek. Így nem kell kifizetni a járulékos jutalékokat ami a kirúgásnál járna.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t40">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t40" title="Tény 40" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Norvégia áramellátásának több mint 98%-át vízerőművek adják.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t41">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t41" title="Tény 41" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Az idő alatt, amíg a Plútót felfedezték és elvették a bolygó státuszát egy teljes kört sem csinált a nap körül.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t42">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t42" title="Tény 42" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A homárok gyakorlatilag halhatatlanok. Nem mutatják jelét öregedésnek, étvágyvesztésnek, szervi elváltozásoknak. Ha egy homár meghal, akkor az külső tényező miatt történik (eddigi megfigyelések alapján).</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t43">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t43" title="Tény 43" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Pán Péter szerzői jogait az író egy gyerekkorháznak adta, így a kórház folyamatosan üzemelhet a szerzőjogi díjak miatt.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t44">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t44" title="Tény 44" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">1971-ben egy középiskolás diák kirepült a repülögépből egy repülőbalesetben a székében ragadva végig és túlélte a 3.2 km-es zuhanást, ami után még 9 napot kellett gyalogolnia a legközelebbi civilizációig.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t45">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t45" title="Tény 45" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Egy nőnek szívrohama volt egy repülőn. Amikor a légiutaskísérő megkérdezte, hogy van-e orvos a repülőn, 15 ember állt fel, mivel mind egy kardiológiai konferenciára tartottak.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t46">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t46" title="Tény 46" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Ha van 5500 forintod és semmi adósságod, akkor gazdagabb vagy mint az amerikaik 25%-a.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t47">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t47" title="Tény 47" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Makákók Japánban megtanulták, hogy hogyan lopjanak pénztárcákat és táskákat. Az érméket amiket loptak arra használják, hogy automatákból italokat és csipszeket vegyenek.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t48">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t48" title="Tény 48" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Japánban van egy család, amelyik már 1300 éve ugyanazt a hotelt futtatják. Ez 46 generációt jelent.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t49">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t49" title="Tény 49" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A második világháborúban 1940-ben Német és Angol repülők lelőtték egymást Norvégia fölött. Amikor a gépek lezuhantak az pilóták segítettek egymásnak túlélni. A háború után találkoztak, de úgy mint barátok.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t50">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t50" title="Tény 50" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Jeruzsálem 1917-es ostromában az Angolok cigerattákat dobáltak le a repülőikről, amikben nagy adag ópium volt annak reményében, hogy ha az Ottománok elszívják őket, akkor nem lesz erejük harcolni. A terv működött.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t51">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t51" title="Tény 51" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Angliában azért olyan nagyok az újságok, mert az angol kormány 1712-ben az szerint kezdte el adóztatni az újságokat, hogy mennyi darab oldaluk van.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t52">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t52" title="Tény 52" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Egy delfin gyakran segített a hajóknak kikerülni a zátonyokat Új-Zéland partjainál, úgy hogy mutatta nekik az utat, egészen a delfin 1912-es eltűnéséig.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t53">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t53" title="Tény 53" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A tőzsdén olyan fontos a sebesség, hogy 300 millió dolláros befektetéssel lefektettek egy transzatlanti kábelt, hogy 0.005 másodpercet javítsanak a London-New York közötti átviteli sebességen.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t54">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t54" title="Tény 54" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">J.R.R. Tolkien elkezdett írni egy könyvet az időutazásról (The Lost Road - Az Elveszett Út), ami öszekötötte volna Középföldét a jelen korral. A könyvet nem fejezte be.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t55">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t55" title="Tény 55" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A füst ami látható űrhajóindításkor, az vízgőz, ami az űrhajó alatti medencéből jön. Ez a medence azért kell, mert felfogja az akusztikus hullámokat amiket az űrhajó kilövéskor kelt, mert különben széttépné az űrhajót.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t56">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t56" title="Tény 56" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Franciaországban csak akkor lehet hívni pékségnek egy helyet, ha minden terméket kézzel készítenek és semmi automatizálást nem használnak.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t57">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t57" title="Tény 57" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Amikor Niel Armstrong és Buzz Aldrin landoltak a holdon, ott hagyták Jurij Gagarin egyik medálját tiszteletük jeléül.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t58">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t58" title="Tény 58" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Amikor Beethoven bemutatta a 9. szimfóniáját a rendőröknek kellett megállítaniuk a közönséget, mert szerintük ekkora tapsot nem kaphat egy nem nemes polgár.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t59">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t59" title="Tény 59" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Amikor a Coca-Cola titkos receptjét el akarták adni a Pepsinek a Pepsi hívta az FBI-t.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t60">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t60" title="Tény 60" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A Ferrari motorok direkt vannak úgy tervezve, hogy szépen szóljanak.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t61">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t61" title="Tény 61" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Senki nem tudja, hogy ki találta fel a tűzcsapot, mivel a szabadlmi lapja elégett egy tűzben.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t62">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t62" title="Tény 62" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A teasütemény feltalálója eladta a szabadalmi jogokat a Nestlének cserébe élethosszig tartó teasüteményért.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t63">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t63" title="Tény 63" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Norvégia bármelyik ország polgárának megengedi, hogy bármely állami egyetemükön ingyen tanuljanak.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t64">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t64" title="Tény 64" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Finnország 2015-re tervezi, hogy minden egyes lakosának legyen 100 Mbit/sec-es internetje. Ez törvénybe is lesz foglalva.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t65">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t65" title="Tény 65" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Amikor Kínában bevezették a McDonald's-ban a Drive-Trought, ez annyira új volt a kínaiknak, hogy megvették az ablaknál az ételt, leparkolták az autót és bevitték az épületbe és asztalnál ették meg.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t66">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t66" title="Tény 66" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Teheneknek van legjobb barátjuk és szomorúak, ha el vannak választva.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t67">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t67" title="Tény 67" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">1808-ban volt egy párbaj több száz méter magasan. Mind a két fél hőlégballonban volt és mordállyal próbálták megsemmisíteni egymás hőlégballonját.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t68">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t68" title="Tény 68" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Amikor Charles Darwin felfedezte a Galápagosi óriásteknőst megpróbált lovagolni rajtuk.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t69">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t69" title="Tény 69" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Új-Zéland tiltja a TV reklámokat a legtöbb nemzeti ünnepén.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t70">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t70" title="Tény 70" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Vannak nyelvek, amelyekben nem található meg az "előre, hátra, jobbra, balra", hanem csak az "észek, dél, nyugat, kelet" szavak. Azok a népek, akik ilyen nyelvet használnak azoknál kialakul az úgynevezett "iránytű agy", ami azt jelenti, hogy bárhol meg tudják álapítani az égtájakat, például egy zárt épület vagy sűrű erdőben.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t71">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t71" title="Tény 71" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Orosz katonák nem hordanak zoknit, csak ruhába csavarják a lábukat. 2013 év végétől kezdik bevezetni a zoknit.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t72">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t72" title="Tény 72" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A középkorban ha gyep volt valaki udvarán az a gazdagság jele volt. Ha valaki arra használhatta az udvarát, hogy ne gyümölcsöt vagy zöldséget termesszen, akkor valószínűleg nagy vagyona volt.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t73">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t73" title="Tény 73" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A 18. századi Angliában a belépődíj állatkertekbe egy kutya vagy egy macska volt. Ahhoz kellettek, hogy az oroszlánokat etessék velük.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t74">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t74" title="Tény 74" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Az ember és a kutya képes csak rá a tanulmányok szerint, hogy más szeméből felismerje, hogy merre néz. A kutya csak az embernél ismeri ezt fel.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t75">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t75" title="Tény 75" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Szaúd-Arábiában a nők vezethetnek repülőt, de autót nem.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t76">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t76" title="Tény 76" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Hollandiában ha több mint 4-en állnak sorban egy kasszánál, és nincsen minden sor nyitva, akkor a sorbanállóknak ingyen van amit venni akartak.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t77">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t77" title="Tény 77" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Annyi fajta alma van, hogyha megennél minden nap egy darabot, akkor 20 évig tartana mindet kipróbálni.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t78">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t78" title="Tény 78" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">James Cameron miután megnézte a Csillagok Háborúját úgy döntött, hogy otthagyja a kamionos munkáját és elkezd filmeket rendezni.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t79">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t79" title="Tény 79" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Jon Bon Jovinak van egy étterme, ahol nem kell fizetni. A vevő annyi pénzt hagy ott, amennyit akar cserébe az ételért vagy beállhat önkéntesnek az étteremben.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t80">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t80" title="Tény 80" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Amikor David Copperfieldet ki akarták rabolni úgy tudta átverni a rablókat, hogy bűvésztrükköt használva elhitette velük, hogy üresek a zsebei. Pedig nála volt a pénztárcája, útlevele, telefonja.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t81">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t81" title="Tény 81" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A II. Világháborúban a németek követeltek Zakynthos sziget polgármesterétől egy listát a szigeten található zsidokról. A polgármester átadott egy listát, amin csak a saját neve és a sziget rabbijáé volt. Így az összes zakynthosi zsidó megmenekült.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t82">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t82" title="Tény 82" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Amikor megkérdezték Albert Einsteint, hogy mekkora a hangsebesség azt válaszolta, hogy "Ilyen információt nem jegyzek meg, mivel megtalálható a könyvekben."</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t83">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t83" title="Tény 83" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A világ legmagasabb fájának ('Hyperion' - 112 méter magas) a pontos helye titokban van tartva, nehogy a turisták megrongálják.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t84">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t84" title="Tény 84" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A hangyakirálynő az egyik leghosszabb életű rovar. Több mint 28 évig tud élni.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t85">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t85" title="Tény 85" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Ha képessek lennénk hallani a 20 Hz alatti hangot, akkor hallanánk az izmainkat mozogni.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t86">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t86" title="Tény 86" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Sok bevásárlóközpont nem használ fűtőtesteket. A legtöbb hő a lámpákból jön és a vásárlókból. Sőt néha be kell kapcsolni a légkondicionálót, hogy elviselhető hőmérsékletre hűtség az épületet még télen is.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t87">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t87" title="Tény 87" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A hím kölyök kutyák szándékosan hagyják nyerni a játékokban a nőstény kölyök kutyákat.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t88">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t88" title="Tény 88" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">1830-as években a görög miniszterelnök megpróbálta elterjeszteni a krumplit az országban, de senki sem akarta termeszteni. Ezért a hajókhoz, amik a krumplit hozták őröket állított, így felkeltve a figyelmet. Az emberek elkezdték lopkodni a krumplit a hajókról így elterjesztve azt az egész országban.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t89">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t89" title="Tény 89" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Vannak férgek, amik a gleccserekben laknak, ha 4 foknál magasabb hőmérsékletre melegítik fel őket, akkor elolvadnak.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t90">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t90" title="Tény 90" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Az elefántok félnek a méhektől, van is egy külön hangjelük, amely arra figyelmeztet, hogy "a méhek mérgesek".</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t91">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t91" title="Tény 91" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Az ókori Kínában csiklandozást használtak a nemesség kínzására, mivel nem hagyott nyomot és gyors volt.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t92">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t92" title="Tény 92" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A francia méhészek "felfedezték" a zöld és kék mézet. Rájöttek, hogy ez az miatt van, mert a méhek elkezdték a közeli M&M's gyár hulladékát gyűjteni.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t93">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t93" title="Tény 93" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Kodak találta fel a digitális fényképezést, de ezt titokban tartották, mivel attól féltek, hogy ez véget vethet a jól profitáló film-készítő üzletüknek. Végül a digitális fényképezőgépek miatt ment csődbe a cég.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t94">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t94" title="Tény 94" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Szinte az összes hörcsög, ami kisállatkereskedésekben kapható 2 darab hörcsög utódja, amit egy tudós hozott magával Szíriából 1930-ban (összesen 11-et hozott, de csak 2-nek lettek kölykei), és amelyek utódiat szétkülte a világ minden pontjára a többi tudósnak további vizsgálatokra.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t95">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t95" title="Tény 95" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A szemüvegek 80%-át egy gyártó készíti. Ezért tudják olyan magasan tartani a szemüvegek árát.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t96">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t96" title="Tény 96" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Az olaszországi Velence alapja 1200 éve épült fatörzsekre. Még szinte teljes egészében ugyanazok a fatörzsek tartsák a város nagy részét.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t97">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t97" title="Tény 97" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Van egy orosz TV műsor, amelyben el kell lopni egy autót, és ha 35 percig nem kapják el a "tolvajt" a rendőrök, akkor megkapja az autót, de ha elkapják, akkor szembe kell néznie a vádakkal.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t98">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t98" title="Tény 98" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Vannak olyan madarak, amelyek elvezetik az embereket méhkaptárakhoz, hogy miután az emberek elvitték a mézet ők meg tudják enni a lárvákat.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t99">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t99" title="Tény 99" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Az ember a legjobb hosszútávfutó az összes élőlény közül. Még a lovaknál is hosszabb távra képes elfutni.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t100">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t100" title="Tény 100" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A kerék később lett feltalálva, mint a hajó, szőtt ruha, varrótű, kosár, de még a furulyánál is.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t101">Következő tény</a>
+            </fieldset>
+        </div>				
+
+        <div id="t101" title="Tény 101" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Egy brazil börtönben csökkentik a rabok büntetését, hogyha szobabiciklin pedáloznak, amivel áramot generálnak a közeli városnak.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t102">Következő tény</a>
+            </fieldset>
+        </div>
+
         <div id="t102" title="Tény 102" class="panel">
-		
-		<fieldset>
-			<div class="row">
-				<p style="text-align:center;">Felmérések szerint 28%-a az informatikusoknak titkolja ismerősei és rokonai elől a foglalkozását, nehogy megkérjék "technikai" segítségre.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t103">Következő tény</a>
-		</fieldset>
-	</div>
-        
-<div id="t103" title="Tény 103" class="panel">
-		
-		<fieldset>
-			<div class="row">
-                                <p style="text-align:center;">Nokia fejleszt egy technológiát, ami rádióhullámokkal tudná tölteni a telefont.</p>
-			</div>
-		</fieldset>
-            
-		<fieldset>
-			<a class="whiteButton" href="#t1">Elölről</a>
-		</fieldset>
-    
-		<fieldset>
-			<div class="row">
-                                <p style="text-align:center;"><i>Ne felejtsd el értékelni az appot a Google Play-ben. Köszönjük. Hamarosan több tény kerül bele majd az appba.</i></p>
-			</div>
-		</fieldset>
-	</div>
-	
-</body>
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Felmérések szerint 28%-a az informatikusoknak titkolja ismerősei és rokonai elől a foglalkozását, nehogy megkérjék "technikai" segítségre.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t103">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t103" title="Tény 103" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Létezik egy tüskés levelű fa, Gympie Gympie, amelynek a mérge olyan erős, hogy az embereket öngyilkosságba kergetni, mert annyira fájdalmas. Egy ember egyszer a dzsungelban WC papír helyett használta és pár óra után fejbelőtte saját magát.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t104">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t104" title="Tény 104" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Németországban vannak nyilvános "művészeti könyvtárak", ahol maximum 5 Euróért lehet képet kölcsönözni a művésztől és pár hónapig magunknál tartani, hogy kirakjuk az otthonunkban.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t105">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t105" title="Tény 105" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A Curiosity Mars-űrszonda saját magának játszotta a "Boldog születésnapot" dalt (angolul), így ez a dal lett az első ami egy idegen égitesten hangzott el.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t106">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t106" title="Tény 106" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Thomas Edison megtanította feleségét a Morse kódra, így tudtak kommunikálni egymással egymás kezének érintéseivel, amikor a családjuk is a közelben volt.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t107">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t107" title="Tény 107" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Aki kitalálta a fejjel lefelé ketchupos üveget 13 millió dollárt keresett a szabadalommal.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t108">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t108" title="Tény 108" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A Brit Haditengereszetnél egy matróz csak akkor növeszthet bajszot és szakálat, ha "elég férfias a bajsza és a szakála" két hét növesztés után.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t109">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t109" title="Tény 109" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">A kanadai hokicsapat annyira domináns volt, hogy az 1930-as világbajnokságon nem is kellet lejátszaniuk a selejtezőket, egyből mehettek a döntőbe, és a döntőben így is 6-1-re legyőzték az ellenfelüket.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t110">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t110" title="Tény 110" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Egy magyar pszichológus Polgár László írt egy könyvet arról, hogy hogyan neveljünk zseniket. Bemutatta az ötletét egy tanárnak. Később összeházasodtak és felneveltek három sakk nagymestert, kettő közülük rekordot is döntött, egyikük pedig az első nő lett, aki legyőzte a legjobb férfi sakkozót.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t111">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t111" title="Tény 111" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Freud annyira szerette a kokaint, hogy néha azt ajándékozta a családjának és a barátainak.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t112">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t112" title="Tény 112" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Az emberi szem annyira érzékeny, hogy teljes sötétségben és ha a föld lapos lenne akkor 48 km távolságból észrevenné egy gyertya lángját.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t113">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t113" title="Tény 113" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Egy német juhász őr kutya a Belgrádi Állatkertben egyszer megállított egy elszökött jaguárt így megmentette egy alkalmazott életét.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t114">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t114" title="Tény 114" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Egy újságíró megkérdezte XXIII János pápát, hogy mennyien dolgoznak a Vatikánban. A pápa azt válaszolta, hogy "körülbelül a felük".</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t115">Következő tény</a>
+            </fieldset>
+        </div>
+
+        <div id="t115" title="Tény 115" class="panel">
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;">Nokia fejleszt egy technológiát, ami rádióhullámokkal tudná tölteni a telefont.</p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <a class="whiteButton" href="#t1">Elölről</a>
+            </fieldset>
+
+            <fieldset>
+                <div class="row">
+                    <p style="text-align:center;"><i>Ne felejtsd el értékelni az appot a Google Play-ben. Köszönjük. Hamarosan több tény kerül bele majd az appba.</i></p>
+                </div>
+            </fieldset>
+        </div>
+    </body>
 </html>
